@@ -10,4 +10,4 @@ Usage
 
 if `.py` is registered, execute `subbot.py <filename>` else same as above
 
-to install a context menu item on files open an elevated command prompt and execute `setup.win.py`
+to install a context menu item on files, open an elevated command prompt and execute `setup.win.py`
