@@ -37,7 +37,7 @@ def subdb_perform_request(f_hash, langs):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 1:
+    if len(sys.argv) == 1:
         print "Missing required arguments"
         sys.exit()
 
