@@ -15,7 +15,8 @@ if len(sys.argv) == 1 or sys.argv[1] == '--i':
     ico = OpenKey(HKEY_CLASSES_ROOT, path, 0, KEY_WRITE)
     try:
         # Set the icon to something semi appropriate. IE being useful right here :^)
-        SetValueEx(ico, 'Icon', 0, REG_SZ, 'ieframe.dll,114')
+        # TODO: Put own icon rather than a system one
+        #SetValueEx(ico, 'Icon', 0, REG_SZ, 'ieframe.dll,114')
 
         # Setting caption to default key
         SetValueEx(ico, '', 0, REG_SZ, 'Download Subtitles')
