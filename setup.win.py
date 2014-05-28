@@ -1,6 +1,10 @@
-from _winreg import *
 import sys
 import os
+try:
+    from _winreg import *
+except:
+    from winreg import *
+
 
 if len(sys.argv) == 1 or sys.argv[1] == '--i':
     path = '*\\shell\\subbot\\'
