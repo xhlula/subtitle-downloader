@@ -8,7 +8,7 @@ except:
 
 if len(sys.argv) == 1 or sys.argv[1] == '--i':
     path = '*\\shell\\subbot\\'
-    command = "{0} \"{1}\\subbot.py\" \"%1\"".format(sys.executable, os.path.dirname(__file__))
+    command = "{0} \"{1}\\subbot.py\" \"%1\" --wait".format(sys.executable, os.path.dirname(__file__))
     CreateKey(HKEY_CLASSES_ROOT, path + "command")
 
     cmd = OpenKey(HKEY_CLASSES_ROOT, path + "command", 0, KEY_READ | KEY_WRITE)

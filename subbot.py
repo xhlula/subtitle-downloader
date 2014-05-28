@@ -52,6 +52,7 @@ if __name__ == "__main__":
         sys.exit()
 
     filename = sys.argv[1]
+    wait = len(sys.argv) > 2 and sys.argv[2] == '--wait'
     file_hash = get_hash(filename)
     sub_fn = "{0}.srt".format(os.path.splitext(filename)[0])
 
@@ -59,6 +60,6 @@ if __name__ == "__main__":
 
     if success:
         open(sub_fn, "wb").write(subtitles)
-    else:
+    elif wait:
         print(message)
         raw_input("")
