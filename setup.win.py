@@ -29,6 +29,6 @@ if len(sys.argv) == 1 or sys.argv[1] == '--i':
         CloseKey(cmd)
         CloseKey(ico)
 elif sys.argv[1] == '--u':
-    # For some reason all I ever get is [Access denied] using pythons' DeleteKey method.
+    # For some reason python all I get is [Access denied] using pythons' DeleteKey method.
     # resorting to reg.exe on windows to delete the key for us
     os.system(r'reg delete HKCR\*\shell\subbot /f')
