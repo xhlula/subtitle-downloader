@@ -4,7 +4,7 @@ Downloads subtitles using the SubDB API
 
 Usage
 
-    python subbot.py <filename>
+    python subbot.py <filename> [--wait]
 
 #Shell integration
 
